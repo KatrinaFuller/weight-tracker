@@ -4,7 +4,7 @@ const ObjectId = Schema.Types.ObjectId
 
 const _model = new Schema({
   startDate: { type: Date, required: true },
-  endDate: { tpye: Date, required: true },
+  endDate: { type: Date, required: true },
   goal: { type: String, required: true },
   userId: { type: ObjectId, ref: "User", required: true }
 })
