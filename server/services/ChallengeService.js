@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 const ObjectId = Schema.Types.ObjectId
 
 const _model = new Schema({
+  challengeName: { type: String, required: true },
   startDate: { type: Date, required: true },
   endDate: { type: Date, required: true },
   goal: { type: String, required: true },
