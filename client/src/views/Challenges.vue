@@ -1,5 +1,5 @@
 <template>
-  <div class="challenges">hi</div>
+  <div class="challenges container-fluid"></div>
 </template>
 
 
