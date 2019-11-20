@@ -14,7 +14,14 @@ export default {
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+    user() {
+      return this.$store.state.user;
+    },
+    challenges() {
+      return this.$store.state.challenges;
+    }
+  },
   methods: {},
   components: { challenge }
 };
