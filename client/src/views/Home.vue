@@ -7,6 +7,11 @@
 
 export default {
   name: "home",
-  components: {}
+  components: {},
+  computed: {
+    user() {
+      return this.$store.state.user;
+    }
+  }
 };
 </script>
