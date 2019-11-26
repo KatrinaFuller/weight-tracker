@@ -18,11 +18,18 @@
 <script>
 export default {
   name: "challenge",
-  prop: ["challengeProp"],
+  props: ["challengeProp"],
   data() {
     return {};
   },
-  computed: {},
+  mounted() {
+    return this.$store.dispatch("getChallenges");
+  },
+  computed: {
+    // user() {
+    //   return this.$state.store.user;
+    // }
+  },
   methods: {},
   components: {}
 };

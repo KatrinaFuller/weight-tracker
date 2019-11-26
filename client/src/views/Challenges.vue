@@ -7,12 +7,16 @@
 
 
 <script>
+import router from "@/router/index.js";
 import challenge from "../components/challenge";
 
 export default {
   name: "challenges",
   data() {
     return {};
+  },
+  mounted() {
+    this.$store.dispatch("getChallenges");
   },
   computed: {
     user() {
