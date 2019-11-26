@@ -25,11 +25,7 @@ export default {
   mounted() {
     return this.$store.dispatch("getChallenges");
   },
-  computed: {
-    // user() {
-    //   return this.$state.store.user;
-    // }
-  },
+  computed: {},
   methods: {},
   components: {}
 };

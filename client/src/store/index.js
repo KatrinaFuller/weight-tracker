@@ -64,6 +64,15 @@ export default new Vuex.Store({
         .then(res => {
           commit('setChallenges', res.data)
         })
+    },
+
+    async addChallenge({ commit, dispatch }, data) {
+      try {
+        let res = await api.post('/challenges', data)
+        dispatch("getChallenges")
+      } catch (error) {
+        console.error("store.js addChallenge")
+      }
     }
   }
 })
